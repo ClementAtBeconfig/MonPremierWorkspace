@@ -10,12 +10,27 @@ import { VersionPartComponent } from 'libs/ma-premiere-lib/src/lib/version/versi
 })
 export class AppComponent {
   title = 'ma-premiere-app';
-  checked = false;
 
   darkModeSwitch(){
+    
+    
+    const darkModeSwitch = document.getElementById('SwitchDarkMode') as HTMLInputElement ;
+    if(darkModeSwitch.checked)
+    {
+      document.documentElement.style.setProperty("--background", "black");
+      document.documentElement.style.setProperty("--fontColor", "white");
+    }
+    else{
+      document.documentElement.style.setProperty("--background", "white");
+      document.documentElement.style.setProperty("--fontColor", "black");
+    }
+   
+      
+    
+     
 
-    document.documentElement.style.setProperty("--background", "black");
-  //
+      
+
   }
 }
 
