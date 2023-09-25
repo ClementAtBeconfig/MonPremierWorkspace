@@ -1,0 +1,25 @@
+<h2 class="titleLogin">Bienvenue</h2>
+<form >
+    <div class="loginContainer" >
+        <div class="loginMainContainer" id="loginMainContainer">
+        <span class="p-float-label">
+                <input pInputText id="username" />
+                <label htmlFor="username">Adresse mail</label>
+            
+        </span>
+    </div>
+    <div class="passwordMainContainer" id="PasswordContainer">
+        <span class="p-float-label">
+            
+                <p-password  id="password"  ></p-password>
+                <label htmlFor="password">Mot de passe</label>
+            </span>
+        </div>
+        <div class="buttonForm">
+            <p-button label="Suivant" class="passwordStep" id="passwordStep" (click)="CallPassword()"></p-button>
+            <p-button label="S'identifier" class="buttonLogin" id="buttonSubmit" ></p-button>
+            <p-button label="Retour" class="returnLogin" id="returnLogin" (click)="ReturnAtLogin()"></p-button>
+        </div>
+    </div>
+</form>
+    

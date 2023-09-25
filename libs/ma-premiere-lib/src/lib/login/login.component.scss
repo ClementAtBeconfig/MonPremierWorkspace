@@ -1,0 +1,27 @@
+
+  .titleLogin{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .loginContainer{   
+    margin: auto;
+    border: 0.2vw solid ;
+    width: 25vw;
+    height: 15vw;
+    padding: 2vw;
+    border-radius: 0.2vw;
+  }
+
+  .passwordMainContainer{
+    display: none;
+  }
+  .buttonLogin{
+    display: none;
+  }
+  .returnLogin{
+    display: none;
+  }
+  .buttonSubmit{
+    text-align: right;
+  }
+ 

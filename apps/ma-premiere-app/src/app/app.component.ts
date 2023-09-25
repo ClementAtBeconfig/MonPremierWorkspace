@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { VersionPartComponent } from 'libs/ma-premiere-lib/src/lib/version/version.part';
+import { LoginComponent } from 'libs/ma-premiere-lib/src/lib/login/login.component';
+import { RouterOutlet } from '@angular/router';
+import { TimeComponent } from 'libs/ma-premiere-lib/src/lib/time/time.component';
 
 @Component({
   standalone: true,
-  imports: [  VersionPartComponent ],
+  imports: [  VersionPartComponent , LoginComponent, RouterOutlet  ,  TimeComponent ],
   selector: 'mon-premier-workspace-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

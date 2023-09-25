@@ -1,12 +1,5 @@
-
-mon-premier-workspace-root{
-    background:var(--version_background,var(--theme_background,black)) ;
-    color:var(--version_color, var(--theme_color, white));
-}
-
-
 .toggle-switch {
-    position: absolute;
+    position: sticky;
     right: 2%;
     width: 100px;
     height: 50px;
