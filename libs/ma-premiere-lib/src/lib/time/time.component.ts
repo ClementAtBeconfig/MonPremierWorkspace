@@ -1,9 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { registerLocaleData } from '@angular/common';
-import localeFr from '@angular/common/locales/fr';
 
-registerLocaleData(localeFr, 'fr');
 @Component({
   selector: 'mon-premier-workspace-time-time',
   standalone: true,
@@ -12,7 +9,17 @@ registerLocaleData(localeFr, 'fr');
   styleUrls: ['./time.component.scss'],
 })
 
-export class TimeComponent {
-  today: number = Date.now();
+export class TimeComponent implements AfterViewInit {
 
+  today: number;
+
+  constructor(){
+    this.today = Date.now();
+  }
+
+  ngAfterViewInit(): void {
+    setInterval(() => {
+      this.today = Date.now();
+    }, 1000);
+  }
 }
